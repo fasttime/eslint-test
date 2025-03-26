@@ -66,6 +66,8 @@ jobs:
               run: npm run lint:unused
 
     test_on_node:
+        env:
+            TSESTREE_SINGLE_RUN: 'false'
         name: Test
         strategy:
             matrix:
