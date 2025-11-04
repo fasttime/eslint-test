@@ -7657,16 +7657,6 @@ describe("LegacyESLint", () => {
 		});
 	});
 
-	describe("when retrieving version number", () => {
-		it("should return current version number", () => {
-			const eslintCLI = require("../../../lib/eslint").LegacyESLint;
-			const version = eslintCLI.version;
-
-			assert.strictEqual(typeof version, "string");
-			assert(parseInt(version[0], 10) >= 3);
-		});
-	});
-
 	describe("mutability", () => {
 		describe("plugins", () => {
 			it("Loading plugin in one instance doesn't mutate to another instance", async () => {

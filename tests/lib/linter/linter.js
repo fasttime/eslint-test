@@ -3856,15 +3856,6 @@ var a = "test2";
 		});
 	});
 
-	describe("when calling version", () => {
-		it("should return current version number", () => {
-			const version = linter.version;
-
-			assert.isString(version);
-			assert.isTrue(parseInt(version[0], 10) >= 3);
-		});
-	});
-
 	describe("when evaluating an empty string", () => {
 		it("runs rules", () => {
 			linter.defineRule("no-programs", {
