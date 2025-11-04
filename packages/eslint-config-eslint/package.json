@@ -71,11 +71,11 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.0",
-    "eslint": "^9.16.0",
+    "eslint": "^10.0.0-alpha.0",
     "typescript": "^5.7.2"
   },
   "peerDependencies": {
-    "eslint": "^9.35.0"
+    "eslint": "^10.0.0-alpha.0"
   },
   "peerDependenciesMeta": {
     "eslint": {
