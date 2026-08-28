@@ -38,9 +38,4 @@ jobs:
             - name: Install Packages
               run: npm install
             - name: Test EMFILE Handling
-              shell: bash
-              run: |
-                  if [ "$RUNNER_OS" = "Linux" ]; then
-                      ulimit -Sn 200000
-                  fi
-                  npm run test:emfile
+              run: npm run test:emfile

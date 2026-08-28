@@ -49,6 +49,8 @@ if (os.platform() !== "win32") {
 		// if we're on a Mac, make sure the limit isn't high enough to cause a call stack error
 		if (os.platform() === "darwin") {
 			FILE_COUNT = Math.min(FILE_COUNT, 100000);
+		} else {
+			FILE_COUNT *= 4;
 		}
 	} catch {
 		// ignore error and use default
