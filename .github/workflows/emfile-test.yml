@@ -41,6 +41,6 @@ jobs:
               shell: bash
               run: |
                   if [ "$RUNNER_OS" = "Linux" ]; then
-                      ulimit -n unlimited
+                      ulimit -n 200000
                   fi
                   npm run test:emfile
