@@ -11,7 +11,7 @@ permissions:
 
 jobs:
     test_on_node:
-        name: Test
+        name: Test-X
         strategy:
             matrix:
                 os: [ubuntu-latest]
