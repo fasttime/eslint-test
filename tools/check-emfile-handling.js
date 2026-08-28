@@ -69,7 +69,7 @@ function generateFiles() {
 
 	for (let i = 0; i < FILE_COUNT; i++) {
 		const fileName = `file_${i}.js`;
-		const fileContent = `// this is file ${i} ${".".repeat(1000)}`;
+		const fileContent = `// this is file ${i} `.padEnd(4097, "/");
 
 		fs.writeFileSync(`${OUTPUT_DIRECTORY}/${fileName}`, fileContent);
 	}
